@@ -1,0 +1,31 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+a,
+a::before,
+a::after {
+  color: grey;
+  display: inline-block;
+  padding-right: 2.25rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  // text-decoration: underline;
+  // text-decoration-thickness: 0.25rem;
+  font-size: 1.1rem;
+  transform: scale(1.025);
+}
+
+.right {
+  display: flex;
+}
+.profile {
+  height: 2.75rem;
+  width: auto;
+}
