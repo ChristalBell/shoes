@@ -4,15 +4,32 @@ import "./carousel.scss";
 const Carousel = () => {
   return (
     <div>
-      <div className="slidePic">
-        <img alt="first" src="./images/image-product-1.jpg" />
-        <img alt="second" src="./images/image-product-2.jpg" />
-        <img alt="third" src="./images/image-product-3.jpg" />
-        <img alt="fourth" src="./images/image-product-4.jpg" />
-      </div>
+      <section>
+        <div className="carousel">
+          <button className="carousel-button previous">previous</button>
+          <button className="carousel-button next">next</button>
+          <ul>
+            <li className="slide" data-active>
+              <img alt="first" src="./images/image-product-1.jpg " />
+            </li>
+            <li className="slide">
+              {" "}
+              <img alt="second" src="./images/image-product-2.jpg" />
+            </li>
+            <li className="slide">
+              {" "}
+              <img alt="third" src="./images/image-product-3.jpg" />
+            </li>
+            <li className="slide">
+              {" "}
+              <img alt="fourth" src="./images/image-product-4.jpg" />
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* // desktop version */}
-      <div className="carousel">
+      <div className="slide-pic">
         <div>
           <img className="main" src="./images/image-product-1.jpg" alt="main" />
           <div className="overlay"></div>

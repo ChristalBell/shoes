@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.scss";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import Carousel from "./components/carousel/Carousel";
 
 function App() {

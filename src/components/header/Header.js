@@ -1,6 +1,4 @@
 import React from "react";
-import "./Hamburger.scss";
-import "./headerStyles.scss";
 
 const Header = () => {
   return (
