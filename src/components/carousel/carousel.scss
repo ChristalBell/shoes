@@ -1,0 +1,51 @@
+.slidePic {
+  &img {
+    width: 23.125rem;
+    height: 18.75rem;
+  }
+}
+.carousel {
+  margin-left: 12.875rem;
+  max-width: 30.625rem;
+  max-height: 40.625rem;
+}
+.main {
+  border-radius: 1rem;
+  height: 27.5rem;
+  width: auto;
+  cursor: pointer;
+}
+.thumbnail {
+  border-radius: 1rem;
+  height: 6rem;
+  width: auto;
+
+  margin-right: 1.25rem;
+  margin-top: 1.875rem;
+
+  &:hover {
+    border: 0.15rem solid orange;
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .carousel {
+    display: none;
+  }
+}
+
+// medium screen 601px - 960px
+@media screen and(min-width: 37.5625rem) and (max-width: 60rem) {
+  .slidePic {
+    display: none;
+  }
+}
+
+// large screen 961px
+@media screen and (min-width: 60.0625rem) {
+  .slidepic {
+    display: none;
+  }
+}

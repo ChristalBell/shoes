@@ -1,8 +1,8 @@
 .header {
-  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem 0;
+  position: sticky;
+  padding-top: 0.5rem;
 }
 
 a,
@@ -19,13 +19,45 @@ a:hover {
   // text-decoration: underline;
   // text-decoration-thickness: 0.25rem;
   font-size: 1.1rem;
-  transform: scale(1.025);
+  transform: scale(1.03);
 }
 
+// .desktop-menu {
+//   display: flex;
+// }
 .right {
   display: flex;
 }
+
 .profile {
   height: 2.75rem;
   width: auto;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .mobile-menu {
+    visibility: visible;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 37.5625rem) and (max-width: 60rem) {
+  .mobile-menu {
+    visibility: visible;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 60.0625rem) {
+  .mobile-menu {
+    display: none;
+  }
+  .desktop-menu {
+    visibility: visible;
+    top: 0;
+  }
 }

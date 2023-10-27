@@ -1,1 +1,22 @@
+// small screen 600px
+@media screen and (max-width: 37.5rem) {
+}
 
+// medium screen 601px - 960px
+@media screen and(min-width: 37.5625rem) and (max-width: 60rem) {
+}
+
+// large screen 961px
+@media screen and (min-width: 60.0625rem) {
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
