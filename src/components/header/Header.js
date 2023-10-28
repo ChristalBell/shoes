@@ -1,11 +1,12 @@
 import React from "react";
+import "./Hamburger.scss";
+import "./headerStyles.scss";
 
 const Header = () => {
   return (
     <div className="header">
+      {/* // Hamburger Menu Hide for Desktop */}
       <div className="mobile-menu">
-        {/* // Hamburger Menu Hide for Desktop */}
-
         <input type="checkbox" id="checkbox" unchecked />
         <label className="mobile-btn" for="checkbox">
           <span></span>
