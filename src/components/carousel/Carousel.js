@@ -29,9 +29,11 @@ const Carousel = () => {
           >
             previous
           </button>
+
           <button className="carousel-button next" data-carousel-button="next">
             next
           </button>
+
           <ul data-slides>
             <li className="slide" data-active>
               <img alt="first" src="./images/image-product-1.jpg " />
