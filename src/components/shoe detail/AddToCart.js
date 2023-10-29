@@ -1,11 +1,9 @@
-import React from "react";
-
 const AddToCart = () => {
   return (
     <div className="add-to-cart">
       <div className="quantity">
         <button>-</button>
-        <div>quantity</div>
+        <div id="display-quantity">quantity</div>
         <button>+</button>
       </div>
 
