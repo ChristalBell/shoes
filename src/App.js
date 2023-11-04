@@ -9,10 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="flex">
-        <Carousel />
-        <ShoeDetail />
-      </div>
+      <Carousel />
+      <ShoeDetail />
     </div>
   );
 }
