@@ -1,82 +1,81 @@
+// .slide {
+//   position: absolute;
+//   inset: 0;
+//   opacity: 0;
+//   transition: 200ms opacity ease-in-out;
+//   transition-delay: 200ms;
+
+//   &.slide > img {
+//     display: block;
+//     height: 100%;
+//     object-fit: cover;
+//     object-position: center;
+//     width: 100%;
+//   }
+
+//   &.slide[data-active] {
+//     opacity: 1;
+//     transition-delay: 0;
+//     z-index: 1;
+//   }
+// }
+
+// .slide-pic {
+//   margin-left: 12.875rem;
+//   max-width: 30.625rem;
+//   max-height: 40.625rem;
+// }
+
+// .main {
+//   border-radius: 1rem;
+//   height: 27.5rem;
+//   width: auto;
+//   cursor: pointer;
+// }
+
+// .thumbnail {
+//   border-radius: 1rem;
+//   height: 6rem;
+//   width: auto;
+//   margin-right: 1.25rem;
+//   margin-top: 1.875rem;
+
 .carousel {
   width: 100vw;
   height: 100vh;
   position: relative;
 
-  &.carousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
-
-.carousel-button {
-  background: none;
-  background-color: rgba(0, 0, 0, 0.075);
-  border: none;
-  cursor: pointer;
-  font-size: 2rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-
-  &.carousel-button.previous {
-    left: 1rem;
-  }
-
-  &.carousel-button.next {
-    right: 1rem;
-  }
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-
-  &.slide > img {
-    display: block;
+  img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    position: absolute;
     width: 100%;
   }
 
-  &.slide[data-active] {
-    opacity: 1;
-    transition-delay: 0;
-    z-index: 1;
-  }
-}
-
-.slide-pic {
-  margin-left: 12.875rem;
-  max-width: 30.625rem;
-  max-height: 40.625rem;
-}
-
-.main {
-  border-radius: 1rem;
-  height: 27.5rem;
-  width: auto;
-  cursor: pointer;
-}
-
-.thumbnail {
-  border-radius: 1rem;
-  height: 6rem;
-  width: auto;
-  margin-right: 1.25rem;
-  margin-top: 1.875rem;
-
-  &:hover {
-    border: 0.15rem solid orange;
-    transform: scale(1.15);
+  button {
+    background-color: rgba(255, 255, 255, 0.822);
+    border: solid 1px white;
+    border-radius: 2rem;
     cursor: pointer;
+    font-size: small;
+    padding: 0.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &#prev {
+      left: 1rem;
+    }
+
+    &#next {
+      right: 1rem;
+    }
   }
 }
 
