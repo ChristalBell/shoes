@@ -28,17 +28,8 @@
 
 // .main {
 //   border-radius: 1rem;
-//   height: 27.5rem;
-//   width: auto;
-//   cursor: pointer;
-// }
 
-// .thumbnail {
-//   border-radius: 1rem;
-//   height: 6rem;
-//   width: auto;
-//   margin-right: 1.25rem;
-//   margin-top: 1.875rem;
+// }
 
 .carousel {
   width: 100vw;
@@ -79,9 +70,37 @@
   }
 }
 
+//desktop styles
+
+#main {
+  border-radius: 1.5rem;
+  max-height: 27.5rem;
+  max-width: auto;
+}
+
+.thumbnails > button {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+
+  & > img {
+    border-radius: 1.5rem;
+  }
+
+  &:hover > img {
+    border: 2px solid orange;
+    border-radius: 1.5rem;
+    transform: scale(1.1);
+  }
+}
+
+//responsive
 @media screen and (max-width: 37.5rem) {
   .slide-pic {
     display: none;
+    width: 50%;
   }
   .carousel {
     visibility: visible;
