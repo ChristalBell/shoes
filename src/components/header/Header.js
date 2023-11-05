@@ -7,8 +7,8 @@ const Header = () => {
     <div className="header">
       {/* // Hamburger Menu Hide for Desktop */}
       <div className="mobile-menu">
-        <input type="checkbox" id="checkbox" unchecked />
-        <label className="mobile-btn" for="checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox" />
+        <label className="mobile-btn" htmlFor="checkbox">
           <span></span>
         </label>
 

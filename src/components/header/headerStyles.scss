@@ -3,6 +3,7 @@
   justify-content: space-between;
   position: sticky;
   padding-top: 0.5rem;
+  z-index: 100;
 }
 
 a,
@@ -21,11 +22,12 @@ a:hover {
 }
 
 .right {
+  align-items: center;
   display: flex;
 }
 
 .profile {
-  height: 2.75rem;
+  height: 1.55rem;
   width: auto;
 }
 

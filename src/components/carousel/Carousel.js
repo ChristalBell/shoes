@@ -39,15 +39,12 @@ const Carousel = () => {
               <img alt="first" src="./images/image-product-1.jpg " />
             </li>
             <li className="slide">
-              {" "}
               <img alt="second" src="./images/image-product-2.jpg" />
             </li>
             <li className="slide">
-              {" "}
               <img alt="third" src="./images/image-product-3.jpg" />
             </li>
             <li className="slide">
-              {" "}
               <img alt="fourth" src="./images/image-product-4.jpg" />
             </li>
           </ul>

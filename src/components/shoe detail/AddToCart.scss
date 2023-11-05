@@ -1,3 +1,32 @@
-.add-to-cart {
+.cart-quantity {
   display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 0 1.625rem;
+}
+
+#quantity-display {
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+button {
+  color: orange;
+  border: none;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#cart-button {
+  background-color: rgb(232, 104, 5);
+  border: none;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.845);
+  font-size: large;
+  font-weight: bolder;
+  padding: 1rem;
+  margin-top: 1rem;
 }

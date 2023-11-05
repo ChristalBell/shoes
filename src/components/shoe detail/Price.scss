@@ -1,3 +1,18 @@
 .price {
-  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.625rem;
+}
+
+#percent {
+  align-self: center;
+  background-color: rgba(255, 166, 0, 0.174);
+  border-radius: 0.5rem;
+  color: orange;
+  margin-left: 1.5rem;
+  padding: 0.4rem;
+}
+
+#discount-price {
+  color: rgba(128, 128, 128, 0.392);
 }
