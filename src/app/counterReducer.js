@@ -4,6 +4,7 @@ export const counterSlice = createSlice({
   name: "counter",
   initialState: {
     count: 0,
+    cartCount: 0,
   },
   reducers: {
     added: (state) => {
@@ -12,9 +13,11 @@ export const counterSlice = createSlice({
     subtracted: (state) => {
       state.count -= 1;
     },
+    addToCart: (state) => {
+      state.cartCount = state.count;
+    },
   },
 });
 
-// export const selectCount = (state) => state.count;
-export const { added, subtracted } = counterSlice.actions;
+export const { added, subtracted, addToCart } = counterSlice.actions;
 export default counterSlice.reducer;

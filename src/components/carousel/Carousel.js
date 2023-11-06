@@ -16,16 +16,23 @@ const Carousel = () => {
     //mobile
     <div>
       <div className="carousel">
-        <button id="prev" onClick={() => setCurrentPic(currentPic - 1)}>
+        <button
+          id="prev"
+          onClick={() => setCurrentPic(currentPic === 0 ? 3 : currentPic - 1)}
+        >
           PREV
         </button>
         <img src={pics[currentPic]} alt="sneaker pics" />
-        <button id="next" onClick={() => setCurrentPic(currentPic + 1)}>
+        <button
+          id="next"
+          onClick={() => setCurrentPic(currentPic === 3 ? 0 : currentPic + 1)}
+        >
           NEXT
         </button>
       </div>
 
       {/* //desktop */}
+
       <div className="slide-pic">
         <img
           id="main"

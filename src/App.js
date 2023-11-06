@@ -10,10 +10,21 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Carousel />
-      <ShoeDetail />
-      <Price />
-      <AddToCart />
+      <div
+        className="flex container"
+        style={{ justifyContent: "center", marginRight: "2rem" }}
+      >
+        <Carousel
+          className="flex"
+          style={{ width: "40vw", justifyContent: "center" }}
+        />
+
+        <div style={{ width: "40vw" }}>
+          <ShoeDetail />
+          <Price />
+          <AddToCart />
+        </div>
+      </div>
     </div>
   );
 }

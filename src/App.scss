@@ -1,5 +1,8 @@
 // small screen 600px
 @media screen and (max-width: 37.5rem) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 // medium screen 601px - 960px

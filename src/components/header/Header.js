@@ -1,8 +1,11 @@
 import React from "react";
 import "./Hamburger.scss";
 import "./headerStyles.scss";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  // const { count } = useSelector((state) => state.counter);
+  // console.log(count);
   return (
     <div className="header">
       {/* // Hamburger Menu Hide for Desktop */}

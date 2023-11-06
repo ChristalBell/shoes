@@ -5,20 +5,20 @@
   font-weight: bolder;
   margin: 0 1.625rem;
 }
-
-#quantity-display {
-  background-color: #f2f2f2;
+.quantity-container {
+  background-color: rgba(94, 89, 89, 0.15);
   border-radius: 0.5rem;
+  display: flex;
   justify-content: space-between;
   padding: 1rem;
-}
 
-button {
-  background: none;
-  color: orange;
-  border: none;
-  font-size: x-large;
-  font-weight: bolder;
+  & > button {
+    color: orange;
+    background: none;
+    border: none;
+    font-size: larger;
+    font-weight: bolder;
+  }
 }
 
 #cart-button {
@@ -30,4 +30,13 @@ button {
   font-weight: bolder;
   padding: 1rem;
   margin-top: 1rem;
+}
+
+//desktop
+// medium screen 601px - 960px
+@media screen and(min-width: 37.5625rem) and (max-width: 60rem) {
+}
+
+// large screen 961px
+@media screen and (min-width: 60.0625rem) {
 }
