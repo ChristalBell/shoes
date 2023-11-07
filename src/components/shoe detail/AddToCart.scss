@@ -35,8 +35,22 @@
 //desktop
 // medium screen 601px - 960px
 @media screen and(min-width: 37.5625rem) and (max-width: 60rem) {
+  .cart-quantity {
+    display: flex;
+    align-content: center;
+  }
 }
 
 // large screen 961px
 @media screen and (min-width: 60.0625rem) {
+  .cart-quantity {
+    display: flex;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .cart-quantity {
+    transform: translateX(100%);
+  }
 }

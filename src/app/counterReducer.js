@@ -13,11 +13,15 @@ export const counterSlice = createSlice({
     subtracted: (state) => {
       state.count -= 1;
     },
+    multiply: (state) => {
+      state.count *= 250;
+    },
+
     addToCart: (state) => {
       state.cartCount = state.count;
     },
   },
 });
 
-export const { added, subtracted, addToCart } = counterSlice.actions;
+export const { added, subtracted, addToCart, multiply } = counterSlice.actions;
 export default counterSlice.reducer;

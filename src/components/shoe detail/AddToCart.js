@@ -1,7 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
-import { added, subtracted } from "../../app/counterReducer";
+import {
+  addToCart,
+  added,
+  multiply,
+  subtracted,
+} from "../../app/counterReducer";
 import "./AddToCart.scss";
 
 const AddToCart = () => {
@@ -15,7 +20,10 @@ const AddToCart = () => {
         <div className="quantity-display"> {count} </div>
         <button onClick={() => dispatch(added())}> + </button>
       </div>
-      <button id="cart-button"> Add to Cart </button>
+      <button onClick={() => dispatch(multiply())} id="cart-button">
+        {" "}
+        Add to Cart{" "}
+      </button>
     </div>
   );
 };

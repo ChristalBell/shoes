@@ -1,11 +1,13 @@
 import React from "react";
 import "./Hamburger.scss";
 import "./headerStyles.scss";
+import CartModal from "./CartModal";
+import counterReducer, { addToCart } from "../../app/counterReducer";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  // const { count } = useSelector((state) => state.counter);
-  // console.log(count);
+  const { count } = useSelector((state) => state.counter);
+  console.log(count);
   return (
     <div className="header">
       {/* // Hamburger Menu Hide for Desktop */}
@@ -48,9 +50,18 @@ const Header = () => {
       </div>
 
       <div className="right">
-        <a href="/" alt="shopping cart">
-          <img src="/images/icon-cart.svg" alt="shopping cart" />
-        </a>
+        <div className="cart-dropdown">
+          <div className="cart-notification">{count}</div>
+          <button id="cart-icon">
+            <img src="/images/icon-cart.svg" alt="shopping cart" />
+          </button>
+          <div className="dropdown-content">
+            <a href="/" alt="shopping cart">
+              <CartModal />
+            </a>
+          </div>
+        </div>
+
         <a href="/" alt="profile">
           <img
             className="profile"

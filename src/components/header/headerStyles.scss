@@ -25,11 +25,42 @@ a:hover {
 .right {
   align-items: center;
   display: flex;
+  transform: translateY(-50%);
 }
 
+.cart-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#cart-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-notification {
+  background-color: orange;
+  border-radius: 1.2rem;
+  font-size: x-small;
+  padding: 0.2rem;
+  text-align: center;
+  transform: translateX(85%) translateY(54%);
+  width: 1.2rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.cart-dropdown:hover .dropdown-content {
+  display: block;
+}
 .profile {
   height: 2rem;
   width: auto;
+  margin-left: 1rem;
 
   &:hover {
     border: solid 1.5px orange;

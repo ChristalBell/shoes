@@ -12,14 +12,24 @@ function App() {
       <Header />
       <div
         className="flex container"
-        style={{ justifyContent: "center", marginRight: "2rem" }}
+        style={{
+          justifyContent: "center",
+          marginRight: "4rem",
+          marginTop: "6rem",
+        }}
       >
         <Carousel
           className="flex"
-          style={{ width: "40vw", justifyContent: "center" }}
+          style={{ width: "30vw", justifyContent: "center" }}
         />
 
-        <div style={{ width: "40vw" }}>
+        <div
+          style={{
+            width: "30vw",
+            marginLeft: "4rem",
+            justifyContent: "center",
+          }}
+        >
           <ShoeDetail />
           <Price />
           <AddToCart />

@@ -16,3 +16,9 @@
 #discount-price {
   color: rgba(128, 128, 128, 0.392);
 }
+
+@media screen and (max-width: 37.5rem) {
+  .price {
+    transform: translateX(100%);
+  }
+}
