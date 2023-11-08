@@ -52,15 +52,18 @@ a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
+  z-index: 100;
 }
 
 .cart-dropdown:hover .dropdown-content {
   display: block;
 }
+
 .profile {
   height: 2rem;
   width: auto;
   margin-left: 1rem;
+  margin-top: 40%;
 
   &:hover {
     border: solid 1.5px orange;

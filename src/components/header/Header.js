@@ -2,11 +2,12 @@ import React from "react";
 import "./Hamburger.scss";
 import "./headerStyles.scss";
 import CartModal from "./CartModal";
-import counterReducer, { addToCart } from "../../app/counterReducer";
+
 import { useSelector } from "react-redux";
 
 const Header = () => {
   const { count } = useSelector((state) => state.counter);
+  const { cartCount } = useSelector((state) => state.counter);
   console.log(count);
   return (
     <div className="header">
@@ -51,14 +52,12 @@ const Header = () => {
 
       <div className="right">
         <div className="cart-dropdown">
-          <div className="cart-notification">{count}</div>
+          <div className="cart-notification">{cartCount}</div>
           <button id="cart-icon">
             <img src="/images/icon-cart.svg" alt="shopping cart" />
           </button>
           <div className="dropdown-content">
-            <a href="/" alt="shopping cart">
-              <CartModal />
-            </a>
+            <CartModal />
           </div>
         </div>
 
