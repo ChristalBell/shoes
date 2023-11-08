@@ -1,7 +1,9 @@
 .price {
   align-items: center;
   justify-content: space-between;
-  margin: 0 1.625rem;
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-right: 500%;
 }
 
 #percent {
@@ -15,10 +17,12 @@
 
 #discount-price {
   color: rgba(128, 128, 128, 0.392);
+  margin-left: 4rem;
 }
 
 @media screen and (max-width: 37.5rem) {
   .price {
-    transform: translateX(100%);
+    width: 50vw;
+    transform: translateX(25%);
   }
 }
